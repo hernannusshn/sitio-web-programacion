@@ -1,4 +1,3 @@
-sobre-mi.html
 <!DOCTYPE html>
 <html lang="es">
 
@@ -6,15 +5,19 @@ sobre-mi.html
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HN Programación - Sobre mí</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/styles.css">
 </head>
 
-<body>
+<body class="sitio">
 
-    <header>
-        <h2>HN Programación</h2>
+    <header class="encabezado">
+        <h2 class="marca">HN Programación</h2>
 
-        <nav>
-            <ul>
+        <nav class="navegacion">
+            <ul class="menu">
                 <li><a href="../index.html">Inicio</a></li>
                 <li><a href="sobre-mi.html">Sobre mí</a></li>
                 <li><a href="proyectos.html">Proyectos</a></li>
@@ -24,10 +27,10 @@ sobre-mi.html
         </nav>
     </header>
 
-    <main>
+    <main class="contenido">
 
-        <section>
-            <h1>Sobre mí</h1>
+        <section class="presentacion">
+            <h1 class="titulo-principal">Sobre mí</h1>
 
             <p>
                 Mi nombre es Hernán y me interesa el mundo de la programación,
@@ -35,10 +38,10 @@ sobre-mi.html
             </p>
         </section>
 
-        <section>
-            <h2>Mi formación</h2>
+        <section class="seccion">
+            <h2 class="titulo-seccion">Mi formación</h2>
 
-            <article>
+            <article class="tarjeta">
                 <h3>Estudios</h3>
 
                 <p>
@@ -49,10 +52,10 @@ sobre-mi.html
             </article>
         </section>
 
-        <section>
-            <h2>Mis intereses</h2>
+        <section class="seccion">
+            <h2 class="titulo-seccion">Mis intereses</h2>
 
-            <ul>
+            <ul class="lista-destacada">
                 <li>Programación</li>
                 <li>Desarrollo web</li>
                 <li>Tecnología</li>
@@ -61,17 +64,17 @@ sobre-mi.html
             </ul>
         </section>
 
-        <section>
-            <h2>Mi objetivo</h2>
+        <section class="seccion">
+            <h2 class="titulo-seccion">Mi objetivo</h2>
 
-            <figure>
+            <figure class="figura">
                 <img
-                    src="../images/programacion.jpg"
+                    src="../images/programacion.svg"
                     alt="Espacio de trabajo dedicado al aprendizaje de programación"
-                    width="500"
+                    class="imagen-principal"
                 >
 
-                <figcaption>
+                <figcaption class="descripcion-imagen">
                     Mi objetivo es seguir creciendo y aprendiendo dentro del mundo tecnológico.
                 </figcaption>
             </figure>
@@ -79,7 +82,7 @@ sobre-mi.html
 
     </main>
 
-    <footer>
+    <footer class="pie-pagina">
         <p>&copy; 2026 HN Programación</p>
 
         <p>

@@ -1,0 +1,60 @@
+
+
+body {
+    background-color: #e41111;
+    color: #000000;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/* =========================
+   HEADER Y NAVEGACIÓN
+========================= */
+
+.encabezado {
+    background-color: #16324F;
+}
+
+.menu {
+    color: #FFFFFF;
+}
+
+
+/* =========================
+   TÍTULOS
+========================= */
+
+.titulo-principal {
+    font-size: 40px;
+    font-weight: 700;
+    color: #16324F;
+}
+
+.titulo-secundario {
+    font-size: 28px;
+    font-weight: 600;
+}
+
+
+/* =========================
+   CONTENIDO
+========================= */
+
+.texto {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.destacado {
+    background-color: #E8F1F5;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+.pie-pagina {
+    background-color: #16324F;
+    color: #FFFFFF;
+}

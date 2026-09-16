@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 650" role="img" aria-labelledby="title description">
+    <title id="title">Espacio de trabajo para programación</title>
+    <desc id="description">Una computadora con líneas de código sobre un escritorio azul.</desc>
+    <defs>
+        <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#102A43"/>
+            <stop offset="1" stop-color="#486581"/>
+        </linearGradient>
+    </defs>
+    <rect width="1200" height="650" fill="url(#background)"/>
+    <circle cx="1010" cy="115" r="165" fill="#2CB1BC" opacity="0.18"/>
+    <circle cx="165" cy="555" r="210" fill="#F0B429" opacity="0.12"/>
+    <rect x="235" y="105" width="730" height="405" rx="24" fill="#071E22" stroke="#D9E2EC" stroke-width="10"/>
+    <rect x="270" y="145" width="660" height="325" rx="8" fill="#102A43"/>
+    <circle cx="310" cy="180" r="10" fill="#F0B429"/>
+    <circle cx="342" cy="180" r="10" fill="#2CB1BC"/>
+    <circle cx="374" cy="180" r="10" fill="#D9E2EC"/>
+    <g fill="none" stroke-linecap="round" stroke-width="16">
+        <path d="M345 250l-55 45 55 45" stroke="#67E8F9"/>
+        <path d="M855 250l55 45-55 45" stroke="#67E8F9"/>
+        <path d="M650 230l-95 135" stroke="#F0B429"/>
+        <path d="M430 250h135M430 295h80M685 295h105M430 340h95M685 340h150M430 385h320" stroke="#D9E2EC"/>
+    </g>
+    <path d="M515 510h170l25 58H490z" fill="#D9E2EC"/>
+    <rect x="390" y="565" width="420" height="24" rx="12" fill="#D9E2EC"/>
+    <text x="600" y="625" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="28" font-weight="700" text-anchor="middle">HN PROGRAMACIÓN</text>
+</svg>

@@ -1,5 +1,3 @@
-contacto.html
-
 <!DOCTYPE html>
 <html lang="es">
 
@@ -7,15 +5,19 @@ contacto.html
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HN Programación - Contacto</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/styles.css">
 </head>
 
-<body>
+<body class="sitio">
 
-    <header>
-        <h2>HN Programación</h2>
+    <header class="encabezado">
+        <h2 class="marca">HN Programación</h2>
 
-        <nav>
-            <ul>
+        <nav class="navegacion">
+            <ul class="menu">
                 <li><a href="../index.html">Inicio</a></li>
                 <li><a href="sobre-mi.html">Sobre mí</a></li>
                 <li><a href="proyectos.html">Proyectos</a></li>
@@ -25,10 +27,10 @@ contacto.html
         </nav>
     </header>
 
-    <main>
+    <main class="contenido">
 
-        <section>
-            <h1>Contacto</h1>
+        <section class="presentacion">
+            <h1 class="titulo-principal">Contacto</h1>
 
             <p>
                 Si querés comunicarte conmigo podés hacerlo
@@ -36,13 +38,13 @@ contacto.html
             </p>
         </section>
 
-        <section>
-            <h2>Medios de contacto</h2>
+        <section class="seccion">
+            <h2 class="titulo-seccion">Medios de contacto</h2>
 
-            <article>
+            <article class="tarjeta">
                 <h3>Redes sociales</h3>
 
-                <ul>
+                <ul class="lista-destacada">
                     <li>Instagram</li>
                     <li>GitHub</li>
                     <li>LinkedIn</li>
@@ -50,10 +52,10 @@ contacto.html
             </article>
         </section>
 
-        <section>
-            <h2>Motivos de contacto</h2>
+        <section class="seccion">
+            <h2 class="titulo-seccion">Motivos de contacto</h2>
 
-            <ul>
+            <ul class="lista-destacada">
                 <li>Consultas sobre proyectos</li>
                 <li>Intercambio de conocimientos</li>
                 <li>Propuestas de colaboración</li>
@@ -61,17 +63,17 @@ contacto.html
             </ul>
         </section>
 
-        <section>
-            <h2>Conectemos</h2>
+        <section class="seccion">
+            <h2 class="titulo-seccion">Conectemos</h2>
 
-            <figure>
+            <figure class="figura">
                 <img
-                    src="../images/programacion.jpg"
+                    src="../images/programacion.svg"
                     alt="Computadora utilizada para comunicarse y trabajar en proyectos tecnológicos"
-                    width="500"
+                    class="imagen-principal"
                 >
 
-                <figcaption>
+                <figcaption class="descripcion-imagen">
                     La tecnología también permite conectar personas y compartir conocimientos.
                 </figcaption>
             </figure>
@@ -79,7 +81,7 @@ contacto.html
 
     </main>
 
-    <footer>
+    <footer class="pie-pagina">
         <p>&copy; 2026 HN Programación</p>
 
         <p>
