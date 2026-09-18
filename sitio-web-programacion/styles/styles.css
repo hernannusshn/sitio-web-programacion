@@ -1,0 +1,87 @@
+/* Estilos generales */
+body {
+    margin: 0;
+    background-color: #f2f2f2;
+    color: #333333;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Encabezado y menú */
+.encabezado {
+    background-color: #173b5e;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.marca {
+    margin-top: 0;
+    font-size: 24px;
+}
+
+.menu {
+    padding: 0;
+    list-style: none;
+}
+
+.menu li {
+    margin-bottom: 10px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Contenido de las páginas */
+.contenido {
+    width: 90%;
+    margin: 20px auto;
+}
+
+.presentacion {
+    background-color: #dce8f2;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #a9bdce;
+}
+
+.titulo-principal {
+    color: #173b5e;
+    font-size: 30px;
+}
+
+.seccion {
+    background-color: white;
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #cccccc;
+}
+
+.titulo-seccion {
+    color: #173b5e;
+    font-size: 24px;
+}
+
+.tarjeta {
+    background-color: #f2f2f2;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.lista-destacada li {
+    margin-bottom: 8px;
+}
+
+/* Imagen y descripción */
+.figura {
+    margin: 0;
+}
+
+.imagen-principal {
+    width: 100%;
+    height: auto;
+}
+
