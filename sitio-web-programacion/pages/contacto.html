@@ -5,21 +5,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HN Programación - Contacto</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../styles/styles.css">
 </head>
 
 <body>
 
     <header class="encabezado">
-        <nav class="navegacion">
-            <h2 class="marca">HN Programación</h2>
-            <ul class="menu">
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="sobre-mi.html">Sobre mí</a></li>
-                <li><a href="proyectos.html">Proyectos</a></li>
-                <li><a href="faq.html">FAQ</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-sitio" data-bs-theme="dark" aria-label="Navegación principal">
+            <div class="container-fluid">
+                <a class="navbar-brand marca" href="../index.html">HN Programación</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir o cerrar menú">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="menuPrincipal">
+                    <ul class="navbar-nav ms-auto menu-bootstrap">
+                        <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="sobre-mi.html">Sobre mí</a></li>
+                        <li class="nav-item"><a class="nav-link" href="proyectos.html">Proyectos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="contacto.html" aria-current="page">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
 
@@ -73,6 +81,7 @@
         </p>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
