@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HN Programación - Inicio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body>
+
+    <header class="encabezado">
+        <nav class="navbar navbar-expand-lg navbar-sitio" data-bs-theme="dark" aria-label="Navegación principal">
+            <div class="container-fluid">
+                <a class="navbar-brand marca" href="index.html">HN Programación</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir o cerrar menú">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="menuPrincipal">
+                    <ul class="navbar-nav ms-auto menu-bootstrap">
+                        <li class="nav-item"><a class="nav-link active" href="index.html" aria-current="page">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="pages/sobre-mi.html">Sobre mí</a></li>
+                        <li class="nav-item"><a class="nav-link" href="pages/proyectos.html">Proyectos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="pages/faq.html">FAQ</a></li>
+                        <li class="nav-item"><a class="nav-link" href="pages/contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="contenido">
+
+        <section class="presentacion">
+            <h1 class="titulo-principal">Bienvenidos a HN Programación</h1>
+
+            <p>
+                Este sitio fue creado para compartir mi aprendizaje,
+                proyectos y conocimientos relacionados con el mundo
+                de la programación y la tecnología.
+            </p>
+        </section>
+
+        <section class="seccion seccion-principal">
+            <h2 class="titulo-seccion">Sobre el sitio</h2>
+
+            <article class="tarjeta">
+                <h3>Aprendiendo programación</h3>
+
+                <p>
+                    Actualmente estoy aprendiendo diferentes herramientas
+                    y lenguajes de programación con el objetivo de seguir
+                    desarrollándome dentro del área de sistemas.
+                </p>
+            </article>
+        
+            <div class="galeria">
+                <h3>Galería de aprendizaje</h3>
+                <div id="galeriaAprendizaje" class="carousel slide" aria-label="Galería de tecnologías">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <a class="card tarjeta-galeria" href="pages/proyectos.html">
+                                <img src="images/html.svg" class="card-img-top" alt="Ilustración de Estructura con HTML">
+                                <div class="card-body">
+                                    <h3 class="card-title">Estructura con HTML</h3>
+                                    <p class="card-text">Las etiquetas organizan el contenido. Ver proyectos.</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="carousel-item">
+                            <a class="card tarjeta-galeria" href="pages/proyectos.html">
+                                <img src="images/css.svg" class="card-img-top" alt="Ilustración de Diseño con CSS">
+                                <div class="card-body">
+                                    <h3 class="card-title">Diseño con CSS</h3>
+                                    <p class="card-text">Grid y Flexbox distribuyen las secciones. Ver proyectos.</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="carousel-item">
+                            <a class="card tarjeta-galeria" href="pages/proyectos.html">
+                                <img src="images/bootstrap.svg" class="card-img-top" alt="Ilustración de Componentes de Bootstrap">
+                                <div class="card-body">
+                                    <h3 class="card-title">Componentes de Bootstrap</h3>
+                                    <p class="card-text">El sitio incorpora navegación y galería. Ver proyectos.</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="carousel-item">
+                            <a class="card tarjeta-galeria" href="pages/proyectos.html">
+                                <img src="images/escritorio.jpg" class="card-img-top" alt="Computadora portátil sobre un escritorio de trabajo" width="1000" height="600">
+                                <div class="card-body">
+                                    <h3 class="card-title">Un espacio para aprender</h3>
+                                    <p class="card-text">La práctica diaria me ayuda a mejorar mis proyectos.</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="carousel-item">
+                            <a class="card tarjeta-galeria" href="pages/proyectos.html">
+                                <img src="images/codigo.jpg" class="card-img-top" alt="Pantalla de una computadora con código de programación" width="1000" height="600">
+                                <div class="card-body">
+                                    <h3 class="card-title">Programación en práctica</h3>
+                                    <p class="card-text">Cada ejercicio es una oportunidad para aprender algo nuevo.</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="controles-galeria">
+                        <button class="btn boton-sitio" type="button" data-bs-target="#galeriaAprendizaje" data-bs-slide="prev">Anterior</button>
+                        <button class="btn boton-sitio" type="button" data-bs-target="#galeriaAprendizaje" data-bs-slide="next">Siguiente</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="seccion seccion-complementaria">
+            <h2 class="titulo-seccion">Tecnologías y herramientas</h2>
+
+            <ul class="lista-destacada">
+                <li>HTML</li>
+                <li>Git y GitHub</li>
+            </ul>
+        </section>
+
+    </main>
+
+    <footer class="pie-pagina">
+        <p>&copy; 2026 HN Programación</p>
+
+        <p>
+            <a href="https://www.instagram.com/">Instagram</a> |
+            <a href="https://github.com/hernannusshn">GitHub</a> |
+            <a href="https://www.linkedin.com/">LinkedIn</a>
+        </p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
