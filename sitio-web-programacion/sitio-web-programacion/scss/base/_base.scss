@@ -1,0 +1,15 @@
+@use "../utilities/variables" as v;
+
+/* Reset del box model */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos generales */
+body {
+    margin: 0;
+    background-color: v.$fondo;
+    color: v.$texto;
+}

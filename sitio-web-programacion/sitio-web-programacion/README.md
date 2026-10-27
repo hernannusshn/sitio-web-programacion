@@ -29,7 +29,9 @@ Se conserva la paleta azul, celeste y gris, con estados hover, focus y active.
 
 - `index.html`: inicio, en la raíz para GitHub Pages.
 - `pages/`: cuatro páginas secundarias.
-- `styles/styles.css`: estilos personalizados.
+- `styles/style.css`: único CSS propio, generado por Sass.
+- `scss/`: código fuente de los estilos, organizado en partials.
+- `package.json` y `package-lock.json`: comandos y versión del compilador.
 - `images/`: ilustraciones y fotografías locales.
 
 ## Uso local
@@ -51,3 +53,49 @@ Fotografías de referencia de Unsplash, no son fotos personales ni proyectos pro
 - Código: https://images.unsplash.com/photo-1515879218367-8466d910aaa4
 
 Las ilustraciones HTML, CSS y Bootstrap pertenecen a la entrega anterior.
+
+## Arquitectura SCSS
+
+El único punto de entrada es `scss/main.scss`. Cada módulo se carga con `@use`
+y declara sus propias dependencias; no se utiliza `@import`.
+
+- `utilities/_variables.scss`: colores, tipografía, espaciados y breakpoints.
+- `utilities/_mixins.scss`: media queries reutilizables para mobile y desktop.
+- `base/_base.scss`: reset y estilos globales.
+- `base/_tipografia.scss`: fuente y tamaño del texto.
+- `layout/_header.scss`, `_footer.scss`, `_nav.scss`: estructura del sitio.
+- `layout/_contenido.scss`, `_escritorio.scss`, `_responsive.scss`: grilla y adaptación.
+- `components/`: tarjetas, listas, imágenes, carrusel, botones, estados y acordeón.
+
+Los módulos se cargan en el orden de las reglas originales para conservar
+la cascada. Los partials usan variables, nesting y `&:hover`.
+
+### Compilar
+
+Instalar Node.js con npm si todavía no está instalado. Desde la raíz del proyecto:
+
+```bash
+npm ci
+npm run build
+```
+
+Para recompilar automáticamente mientras editás:
+
+```bash
+npm run watch
+```
+
+Editar solamente los archivos `.scss`. No editar `styles/style.css`: es un
+resultado generado y debe subirse al repositorio para que GitHub Pages pueda
+servirlo sin instalar Sass. No subir `node_modules`.
+
+### Conservación del diseño
+
+Se mantuvieron el contenido HTML, las clases, Bootstrap por CDN, la navbar,
+los colores y las medidas. El único cambio en los cinco HTML es el nombre de
+la hoja propia enlazada: `styles.css` pasa a `style.css`, como pide la consigna.
+Se eliminó el CSS anterior. No se agregaron estilos inline.
+
+La compilación fue verificada y las declaraciones del resultado coinciden con
+el CSS de origen por selector y media query. No se realizó una prueba visual
+en navegador en esta entrega; revisar mobile y escritorio antes de entregar.

@@ -1,0 +1,17 @@
+@use "../utilities/variables" as v;
+
+/* Acordeón con los colores del sitio */
+.accordion {
+    --bs-accordion-color: #{v.$texto};
+    --bs-accordion-btn-color: #{v.$primario};
+    --bs-accordion-active-color: #{v.$primario};
+    --bs-accordion-active-bg: #{v.$celeste};
+    --bs-accordion-border-color: #{v.$borde-celeste};
+}
+
+.accordion-button {
+    &:hover {
+        color: v.$primario;
+        background-color: v.$celeste;
+    }
+}

@@ -1,0 +1,38 @@
+@use "sass:string";
+
+// Paleta y medidas originales del portafolio.
+$fondo: #f2f2f2;
+$texto: #333333;
+$primario: #173b5e;
+$celeste: #dce8f2;
+$borde-celeste: #a9bdce;
+$borde: #cccccc;
+$enlace-hover: #ffd166;
+$tarjeta-hover: #c5daeb;
+$boton-hover: #285d89;
+$foco: #c28a00;
+$activo: #0c253d;
+$blanco: #fff;
+$blanco-nombre: white;
+$fuente: Arial, sans-serif;
+$interlineado: 1.5;
+$ancho-maximo: 1200px;
+$escritorio: 1024px;
+$mobile: 575px;
+$titulo: 30px;
+$titulo-mobile: 26px;
+$subtitulo: 24px;
+$marca: 22px;
+$espacio-grande: 20px;
+$marca-mobile: 18px;
+$texto-base: 16px;
+$espacio-medio: 15px;
+$espacio-header: 12px;
+$espacio-chico: 10px;
+$espacio-minimo: 8px;
+$anillo-foco: 3px;
+$borde-ancho: 1px;
+$transicion: 0.2s;
+$ancho-contenido: 90%;
+$ancho-completo: 100%;
+$proporcion-imagen: string.unquote("5 / 3");

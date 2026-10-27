@@ -1,0 +1,7 @@
+@use "../utilities/variables" as v;
+
+.boton-sitio {
+    background-color: v.$primario;
+    color: v.$blanco-nombre;
+    border: v.$borde-ancho solid v.$primario;
+}

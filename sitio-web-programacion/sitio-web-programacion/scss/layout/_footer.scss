@@ -1,0 +1,15 @@
+@use "../utilities/variables" as v;
+
+/* Pie de página */
+.pie-pagina {
+    background-color: v.$primario;
+    color: v.$blanco-nombre;
+    padding: v.$espacio-grande;
+    text-align: center;
+}
+
+.pie-pagina {
+    a {
+        color: v.$blanco-nombre;
+    }
+}
