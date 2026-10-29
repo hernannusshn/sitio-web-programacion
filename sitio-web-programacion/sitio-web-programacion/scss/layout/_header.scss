@@ -1,9 +1,0 @@
-@use "../utilities/variables" as v;
-
-/* Encabezado y menú */
-.encabezado {
-    background-color: v.$primario;
-    color: v.$blanco-nombre;
-    padding: v.$espacio-grande;
-
-}
