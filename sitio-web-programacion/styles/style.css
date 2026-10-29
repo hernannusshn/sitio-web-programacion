@@ -1,0 +1,239 @@
+@charset "UTF-8";
+/* Reset del box model */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilos generales */
+body {
+  margin: 0;
+  background-color: #f2f2f2;
+  color: #333333;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Encabezado y menú */
+.encabezado {
+  background-color: #173b5e;
+  color: white;
+  padding: 20px;
+}
+
+/* Navbar de Bootstrap con la paleta del sitio */
+.navbar-sitio {
+  background-color: #173b5e;
+}
+
+.marca {
+  font-size: 22px;
+  white-space: normal;
+}
+
+.menu-bootstrap {
+  gap: 10px;
+}
+
+/* Contenido de las páginas */
+/* Mobile-first: una columna sin media query */
+.contenido {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  grid-template-areas: "presentacion" "principal" "complementaria";
+  gap: 20px;
+  width: 90%;
+  max-width: 1200px;
+  margin: 20px auto;
+}
+
+.presentacion {
+  grid-area: presentacion;
+}
+
+.seccion-principal {
+  grid-area: principal;
+}
+
+.seccion-complementaria {
+  grid-area: complementaria;
+}
+
+.presentacion {
+  background-color: #dce8f2;
+  padding: 20px;
+  border: 1px solid #a9bdce;
+}
+
+.titulo-principal {
+  color: #173b5e;
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+
+.seccion {
+  min-width: 0;
+  background-color: white;
+  padding: 20px;
+  border: 1px solid #cccccc;
+}
+
+.titulo-seccion {
+  color: #173b5e;
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.tarjeta {
+  background-color: #f2f2f2;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+
+.lista-destacada li {
+  margin-bottom: 8px;
+}
+
+/* Imagen y descripción */
+.figura {
+  margin: 0;
+}
+
+.imagen-principal {
+  width: 100%;
+  height: auto;
+}
+
+.tarjeta h3 {
+  margin-bottom: 10px;
+}
+
+.lista-destacada {
+  padding-left: 20px;
+}
+
+/* Pie de página */
+.pie-pagina {
+  background-color: #173b5e;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.pie-pagina a {
+  color: white;
+}
+
+/* Escritorio: presentación arriba y dos columnas debajo */
+@media (min-width: 1024px) {
+  .contenido {
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas: "presentacion presentacion" "principal complementaria";
+  }
+}
+/* Galería: conserva el layout propio del contenido */
+.galeria {
+  margin-top: 20px;
+}
+
+.galeria h3 {
+  margin-bottom: 15px;
+}
+
+.tarjeta-galeria {
+  color: #173b5e;
+  background-color: #dce8f2;
+  border: 1px solid #a9bdce;
+  text-decoration: none;
+}
+
+.tarjeta-galeria img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 5 / 3;
+  object-fit: cover;
+}
+
+.controles-galeria {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.boton-sitio {
+  background-color: #173b5e;
+  color: white;
+  border: 1px solid #173b5e;
+}
+
+/* Estados para enlaces, botones y tarjetas clicables en las cinco páginas */
+a, button {
+  transition: background-color 0.2s, color 0.2s, box-shadow 0.2s;
+}
+
+a:hover, .navbar-sitio .nav-link:hover {
+  color: #ffd166;
+}
+
+.tarjeta-galeria:hover {
+  color: #173b5e;
+  background-color: #c5daeb;
+}
+
+button:hover, .boton-sitio:hover {
+  color: white;
+  background-color: #285d89;
+}
+
+a:focus, button:focus {
+  outline: 3px solid #c28a00;
+  outline-offset: 3px;
+  box-shadow: 0 0 0 3px #fff;
+}
+
+a:active, button:active, .boton-sitio:active {
+  color: white;
+  background-color: #0c253d;
+}
+
+/* Acordeón con los colores del sitio */
+.accordion {
+  --bs-accordion-color: #333333;
+  --bs-accordion-btn-color: #173b5e;
+  --bs-accordion-active-color: #173b5e;
+  --bs-accordion-active-bg: #dce8f2;
+  --bs-accordion-border-color: #a9bdce;
+}
+
+.accordion-button:hover {
+  color: #173b5e;
+  background-color: #dce8f2;
+}
+
+/* Evita desbordes con textos largos y menús en pantallas chicas */
+.contenido > *, .navbar-brand {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 575px) {
+  .encabezado {
+    padding: 12px 8px;
+  }
+  .marca {
+    font-size: 18px;
+  }
+  .presentacion, .seccion {
+    padding: 16px;
+  }
+  .titulo-principal {
+    font-size: 26px;
+  }
+}

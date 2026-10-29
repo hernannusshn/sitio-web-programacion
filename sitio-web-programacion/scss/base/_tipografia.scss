@@ -1,0 +1,7 @@
+@use "../utilities/variables" as v;
+
+body {
+    font-family: v.$fuente;
+    font-size: v.$texto-base;
+    line-height: v.$interlineado;
+}

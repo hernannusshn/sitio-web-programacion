@@ -41,13 +41,14 @@ body {
 /* Mobile-first: una columna sin media query */
 .contenido {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
     grid-template-areas:
         "presentacion"
         "principal"
         "complementaria";
     gap: 20px;
     width: 90%;
+    max-width: 1200px;
     margin: 20px auto;
 }
 
@@ -159,6 +160,8 @@ body {
 .tarjeta-galeria img {
     width: 100%;
     height: auto;
+    aspect-ratio: 5 / 3;
+    object-fit: cover;
 }
 
 .controles-galeria {
@@ -203,4 +206,42 @@ a:focus, button:focus {
 a:active, button:active, .boton-sitio:active {
     color: white;
     background-color: #0c253d;
+}
+
+/* Acordeón con los colores del sitio */
+.accordion {
+    --bs-accordion-color: #333333;
+    --bs-accordion-btn-color: #173b5e;
+    --bs-accordion-active-color: #173b5e;
+    --bs-accordion-active-bg: #dce8f2;
+    --bs-accordion-border-color: #a9bdce;
+}
+
+.accordion-button:hover {
+    color: #173b5e;
+    background-color: #dce8f2;
+}
+
+/* Evita desbordes con textos largos y menús en pantallas chicas */
+.contenido > *, .navbar-brand {
+    min-width: 0;
+    overflow-wrap: anywhere;
+}
+
+@media (max-width: 575px) {
+    .encabezado {
+        padding: 12px 8px;
+    }
+
+    .marca {
+        font-size: 18px;
+    }
+
+    .presentacion, .seccion {
+        padding: 16px;
+    }
+
+    .titulo-principal {
+        font-size: 26px;
+    }
 }

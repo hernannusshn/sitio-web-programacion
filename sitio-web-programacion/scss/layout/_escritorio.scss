@@ -1,0 +1,13 @@
+@use "../utilities/variables" as v;
+@use "../utilities/mixins" as m;
+
+/* Escritorio: presentación arriba y dos columnas debajo */
+@include m.escritorio {
+    .contenido {
+        grid-template-columns: 2fr 1fr;
+        grid-template-areas:
+            "presentacion presentacion"
+            "principal complementaria";
+    }
+
+}

@@ -1,0 +1,15 @@
+@use "../utilities/variables" as v;
+
+/* Navbar de Bootstrap con la paleta del sitio */
+.navbar-sitio {
+    background-color: v.$primario;
+}
+
+.marca {
+    font-size: v.$marca;
+    white-space: normal;
+}
+
+.menu-bootstrap {
+    gap: v.$espacio-chico;
+}
